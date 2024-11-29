@@ -61,7 +61,7 @@ ul li a {
   font-size: 16px;
 }
 #home {
-  margin: 170px 100px 150px;
+  margin: 170px 100px 100px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -131,7 +131,6 @@ ul li a {
 .butt2:hover {
   border: black solid 3px;
   background-color: #fa6e00;
-  margin-right: 25px;
 }
 .projek {
   display: flex;
