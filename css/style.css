@@ -61,7 +61,11 @@ ul li a {
   font-size: 16px;
 }
 #home {
-  margin: 150px 100px;
+  margin: 170px 100px 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box1-1 {
   width: 550px;
@@ -75,7 +79,7 @@ ul li a {
   color: #707070;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .box1-1 .isi h2 {
   color: #959595;
@@ -109,11 +113,25 @@ ul li a {
   margin-right: 25px;
   color: white;
   font-weight: bold;
+  transition: 200ms ease-in-out;
+  border: black solid 3px;
+}
+.butt1:hover{
+  border: #707070 solid 3px;
+  color: #959595;
+  font-weight: bold;
+  background-color: transparent;
 }
 .butt2 {
   border: #707070 solid 3px;
   color: #959595;
   font-weight: bold;
+  transition: 200ms ease-in-out;
+}
+.butt2:hover{
+  border: black solid 3px;
+  background-color: #fa6e00;
+  margin-right: 25px;
 }
 .projek {
   display: flex;
@@ -190,7 +208,7 @@ ul li a {
   text-align: justify;
 }
 #aboutme {
-  margin: 400px 100px 200px;
+  margin: 100px 100px 200px;
 }
 .box3 {
   width: 100%;
