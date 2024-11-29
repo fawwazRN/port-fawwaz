@@ -116,7 +116,7 @@ ul li a {
   transition: 200ms ease-in-out;
   border: black solid 3px;
 }
-.butt1:hover{
+.butt1:hover {
   border: #707070 solid 3px;
   color: #959595;
   font-weight: bold;
@@ -128,7 +128,7 @@ ul li a {
   font-weight: bold;
   transition: 200ms ease-in-out;
 }
-.butt2:hover{
+.butt2:hover {
   border: black solid 3px;
   background-color: #fa6e00;
   margin-right: 25px;
