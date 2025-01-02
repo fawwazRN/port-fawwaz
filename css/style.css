@@ -61,7 +61,7 @@ ul li a {
   font-size: 16px;
 }
 #home {
-  margin: 170px 100px 100px;
+  margin: 170px 100px -100px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -131,6 +131,7 @@ ul li a {
 .butt2:hover {
   border: black solid 3px;
   background-color: #fa6e00;
+  color: white;
 }
 .projek {
   display: flex;
@@ -181,7 +182,7 @@ ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 750px;
+  /* height: 750px; */
 }
 .kolom {
   height: 300px;
@@ -207,7 +208,7 @@ ul li a {
   text-align: justify;
 }
 #aboutme {
-  margin: 100px 100px 200px;
+  margin: 10px 100px 150px;
 }
 .box3 {
   width: 100%;
@@ -233,7 +234,7 @@ ul li a {
 #portofolio {
   margin: 100px 100px;
 }
-.hasil {
+.total-hasil {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -241,7 +242,7 @@ ul li a {
 .info.margin {
   margin-bottom: 50px;
 }
-.project {
+.total {
   width: 400px;
   height: 450px;
   background-color: white;
@@ -249,13 +250,13 @@ ul li a {
   margin-bottom: 50px;
   position: relative;
 }
-.project a {
+.total a {
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 20px;
 }
-.project img {
+.total img {
   width: 400px;
   height: 450px;
   object-fit: cover;
@@ -403,4 +404,60 @@ textarea {
 .cp p {
   color: #707070;
   font-weight: bold;
+}
+@media screen and (max-width: 1286px) {
+  .info p {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #service {
+    margin: 30px auto auto auto;
+  }
+  .bag-kolom {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  #portofolio {
+    margin: 100px 0;
+    justify-content: center;
+  }
+  .box4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .projek {
+    padding: 15px;
+  }
+  .hasil {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .total-hasil {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 710px) {
+  .kotak2 {
+    display: none;
+  }
+  .box1-1 .isi h1 {
+    font-size: 50px;
+    
+  }
+  .box1-1 .isi h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .box1-1 .isi h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
 }
