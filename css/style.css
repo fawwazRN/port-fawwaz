@@ -20,7 +20,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 57px 80px;
-  position: relative;
+  position: fixed;
   z-index: 9999;
   top: 0;
   background-color: black;
@@ -478,10 +478,13 @@ textarea {
     width: 175px;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 950px) {
   nav{
     display: none;
   }
+}
+@media screen and (max-width: 710px) {
+  
   .kotak2 {
     display: none;
   }
@@ -621,7 +624,7 @@ textarea {
     margin-bottom: 0;
   }
   .box1-1 .isi h1 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   .box1-1 .isi h2 {
     font-size: 6vw;
@@ -645,8 +648,6 @@ textarea {
   .box3 p {
     text-align: justify;
   }
-}
-@media screen and (max-width: 515px) {
   i.icon-delete {
     display: none;
   }
