@@ -11,15 +11,16 @@ body {
   font: 20px/24px lato;
   color: white;
   background-color: black;
+  overflow-x: hidden;
 }
 .header {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 43px;
   justify-content: space-around;
   align-items: center;
   padding: 57px 80px;
-  position: fixed;
+  position: relative;
   z-index: 9999;
   top: 0;
   background-color: black;
@@ -29,26 +30,22 @@ body {
   font-family: K2D;
   font-size: 30px;
 }
-nav {
+nav.leptop{
   width: 654px;
   height: 24px;
 }
-nav ul {
+nav.leptop ul {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
-ul li {
+.leptop ul li {
   list-style: none;
 }
-ul li a {
+.leptop ul li a {
   text-decoration: none;
   font-size: 20px;
   color: white;
-}
-.active {
-  color: #fa6e00;
-  font-weight: bold;
 }
 .hire-button {
   padding: 12px 40px;
@@ -182,13 +179,12 @@ ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* height: 750px; */
 }
 .kolom {
   height: 300px;
   width: 400px;
   background-color: rgba(255, 255, 255, 0.098);
-  text-align: center;
+  text-align: left;
   padding: 30px;
   border-radius: 20px;
   margin-bottom: 50px;
@@ -198,7 +194,7 @@ ul li a {
 }
 .kolom h1 {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #fa6e00;
   font-weight: bold;
 }
@@ -234,13 +230,19 @@ ul li a {
 #portofolio {
   margin: 100px 100px;
 }
-.total-hasil {
+.-hasil {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .info.margin {
   margin-bottom: 50px;
+}
+.total-hasil {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  flex-wrap: wrap;
 }
 .total {
   width: 400px;
@@ -409,6 +411,21 @@ textarea {
   .info p {
     margin-bottom: 25px;
   }
+  .kolom {
+    height: 275px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.098);
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+  }
+  .kolom h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fa6e00;
+    font-weight: bold;
+  }
 }
 @media screen and (max-width: 1100px) {
   #service {
@@ -436,21 +453,40 @@ textarea {
     padding-right: 10px;
   }
 }
-@media screen and (max-width: 835px) {
-  .total-hasil {
+@media screen and (max-width: 1010px) {
+/* akan dibuatnya hamburger pada size 950px */
+  .header {
+    padding: 40px 50px;
+  }
+  .logo h1 {
+    font-size: 25px;
+  }
+  nav ul {
+    gap: 30px;
+  }
+  ul li a {
+    font-size: 16px;
+  }
+  .hire-button {
+    padding: 10px 20px;
+    width: 125px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+  }
+  .hire-button a {
+    text-align: center;
+    width: 175px;
   }
 }
 @media screen and (max-width: 710px) {
+  nav{
+    display: none;
+  }
   .kotak2 {
     display: none;
   }
   .box1-1 .isi h1 {
     font-size: 50px;
-    
   }
   .box1-1 .isi h2 {
     font-size: 24px;
@@ -459,5 +495,159 @@ textarea {
   .box1-1 .isi h3 {
     font-size: 18px;
     margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 612px) {
+  .doublebutton {
+    display: none;
+  }
+  #home {
+    height: 100vh;
+    margin: 100px 75px 0;
+  }
+  .isi {
+    margin-bottom: 150px;
+  }
+  .kolom {
+    height: 325px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  #aboutme {
+    margin: 100px 100px 125px;
+  }
+  .info {
+    margin-bottom: 50px;
+  }
+  .kolom h1 {
+    font-size: 20px;
+  }
+  .kolom p {
+    font-size: 14px;
+  }
+  .info {
+    margin-bottom: 30px;
+  }
+  .info p {
+    display: none;
+  }
+  .box3 p {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .total {
+    width: 275px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+  }
+  .total img {
+    width: 275px;
+    height: 350px;
+  }
+  .teks {
+    width: 275px;
+    height: 50px;
+    background-color: #252525;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  .nama {
+    font-size: 16px;
+  }
+  .total a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .kolom-pertanyaan p {
+    display: none;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .baris {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  .masuk {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .keluar {
+    width: 100%;
+  }
+  .select {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  textarea {
+    width: 100%;
+    height: 125px;
+    padding: 10px 20px;
+  }
+  .kirim {
+    margin-left: 0;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  form {
+    margin-bottom: 30px;
+  }
+  .search {
+    display: none;
+  }
+  .kotak1 .logo {
+    margin-bottom: 10px;
+  }
+  .cp {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .unresponsive {
+    display: none;
+  }
+  #home {
+    margin-bottom: 0;
+  }
+  .box1-1 .isi h1 {
+    font-size: 10vw;
+  }
+  .box1-1 .isi h2 {
+    font-size: 6vw;
+  }
+  .box1-1 .isi h3 {
+    font-size: 5vw;
+  }
+  #service {
+    margin-top: 10px;
+    padding-top: 0;
+  }
+  .CV {
+    padding: 20px 20px;
+  }
+  .shorten-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  .box3 p {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 515px) {
+  i.icon-delete {
+    display: none;
   }
 }
